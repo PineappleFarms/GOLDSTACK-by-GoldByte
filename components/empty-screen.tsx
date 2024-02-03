@@ -6,8 +6,8 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'Explain a Savings account',
-    message: `What is a "Savings account"?`
+    heading: 'Explain a savings account',
+    message: `What is a "savings account"?`
   },
   {
     heading: 'Summarize my finances',
