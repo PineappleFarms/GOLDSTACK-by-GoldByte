@@ -15,7 +15,7 @@ const exampleMessages = [
   },
   {
     heading: 'Draft a tax return',
-    message: `Draft an tax return to my boss about the following: \n`
+    message: `Draft an tax return to the IRS about the following: \n`
   }
 ]
 
