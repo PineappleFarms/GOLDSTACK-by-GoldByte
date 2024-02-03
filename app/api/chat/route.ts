@@ -1,6 +1,7 @@
 import { kv } from '@vercel/kv'
 import { OpenAIStream, StreamingTextResponse } from 'ai'
 import OpenAI from 'openai'
+import * as pinecone from 'pinecone-client'
 
 import { auth } from '@/auth'
 import { nanoid } from '@/lib/utils'
@@ -10,6 +11,10 @@ export const runtime = 'edge'
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 })
+
+const pineconeClient = new pinecone.Client({ 
+  apiKey: process.env.PINECONE_API_KEY, 
+});
 
 export async function POST(req: Request) {
   const json = await req.json()
@@ -58,6 +63,8 @@ export async function POST(req: Request) {
         score: createdAt,
         member: `chat:${id}`
       })
+      // Inside the onCompletion function
+      await pineconeClient.upsertItems('0', [{ id, payload }]);
     }
   })
 
