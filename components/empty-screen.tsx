@@ -32,7 +32,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           <ExternalLink href="https://vercel.com/storage/kv">
             Vercel KV
           </ExternalLink>
-          to help you with your manage your money.
+          to help you: Study. Save. Stack.
         </p>
         <p className="leading-normal text-muted-foreground">
           You can start a conversation here or try the following examples:
