@@ -1,7 +1,7 @@
 import { kv } from '@vercel/kv'
 import { OpenAIStream, StreamingTextResponse } from 'ai'
 import OpenAI from 'openai'
-import * as pinecone from 'pinecone-client'
+//import pinecone from 'pinecone-client'
 
 import { auth } from '@/auth'
 import { nanoid } from '@/lib/utils'
