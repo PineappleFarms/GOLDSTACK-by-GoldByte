@@ -6,16 +6,16 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'Explain technical concepts',
-    message: `What is a "serverless function"?`
+    heading: 'Explain a Savings account',
+    message: `What is a "Savings account"?`
   },
   {
-    heading: 'Summarize an article',
-    message: 'Summarize the following article for a 2nd grader: \n'
+    heading: 'Summarize my finances',
+    message: 'Summarize the following financial data for a 2nd grader: \n'
   },
   {
-    heading: 'Draft an email',
-    message: `Draft an email to my boss about the following: \n`
+    heading: 'Draft a tax return',
+    message: `Draft an tax return to my boss about the following: \n`
   }
 ]
 
@@ -32,7 +32,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           <ExternalLink href="https://vercel.com/storage/kv">
             Vercel KV
           </ExternalLink>
-          .
+          to help you with your manage your money.
         </p>
         <p className="leading-normal text-muted-foreground">
           You can start a conversation here or try the following examples:
