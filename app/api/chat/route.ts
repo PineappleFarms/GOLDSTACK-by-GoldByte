@@ -12,9 +12,9 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 })
 
-const pineconeClient = new pinecone.Client({ 
-  apiKey: process.env.PINECONE_API_KEY, 
-});
+//const pineconeClient = new pinecone.Client({ 
+//  apiKey: process.env.PINECONE_API_KEY, 
+//});
 
 export async function POST(req: Request) {
   const json = await req.json()
@@ -63,8 +63,8 @@ export async function POST(req: Request) {
         score: createdAt,
         member: `chat:${id}`
       })
-      // Inside the onCompletion function
-      await pineconeClient.upsertItems('0', [{ id, payload }]);
+      // Pinecone onCompletion function
+      //await pineconeClient.upsertItems('0', [{ id, payload }]);
     }
   })
 
