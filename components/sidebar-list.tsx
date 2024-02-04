@@ -30,13 +30,18 @@ export async function SidebarList({ userId }: SidebarListProps) {
         )}
       </div>
 
-      <div className="items-center" style={{ width: '80%', borderRadius: '100%' }} >
+      <div style={{ width: '100%' }}>
         <center>
-          <video className="object-cover VideoTag" style={{ borderRadius: '50%' }} preload='auto' autoPlay loop muted>
-            <source src="https://chat.d-id.com/videos/prs_alice.idle.mp4" type='video/mp4' />
-          </video>
+          <div style={{ width: '80%', borderRadius: '100%' }} >
+
+            <video className="object-cover VideoTag" style={{ borderRadius: '50%' }} preload='auto' autoPlay loop muted>
+              <source src="https://chat.d-id.com/videos/prs_alice.idle.mp4" type='video/mp4' />
+            </video>
+
+          </div>
         </center>
       </div>
+
 
       <div className="flex items-center justify-between p-4">
         <ThemeToggle />
