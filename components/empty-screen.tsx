@@ -11,11 +11,11 @@ const exampleMessages = [
   },
   {
     heading: 'Summarize my finances',
-    message: 'Summarize the following financial data for a 2nd grader: \n'
+    message: 'Summarize the following financial data for a 2nd grader: '
   },
   {
     heading: 'Draft a tax return',
-    message: `Draft an tax return to the IRS about the following: \n`
+    message: `Draft an tax return to the IRS about the following: `
   }
 ]
 
