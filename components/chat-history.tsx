@@ -38,6 +38,9 @@ export async function ChatHistory({ userId }: ChatHistoryProps) {
           </div>
         }
       >
+        <div>
+        <video loop preload="yes" autoPlay src="https://chat.d-id.com/videos/prs_alice.idle.mp4"></video>
+        </div>
         {/* @ts-ignore */}
         <SidebarList userId={userId} />
       </React.Suspense>
