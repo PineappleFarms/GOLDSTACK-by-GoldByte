@@ -41,10 +41,13 @@ export async function ChatHistory({ userId }: ChatHistoryProps) {
 
         {/* @ts-ignore */}
         <SidebarList userId={userId} />
+        <div style={{ width: '100%', height: '180px', borderRadius: '100%' }} >
+          <video className="object-cover VideoTag" style={{ borderRadius: '50%' }} preload='auto'  autoPlay loop muted>
+            <source src="https://chat.d-id.com/videos/prs_alice.idle.mp4" type='video/mp4' />
+          </video>
+        </div>
       </React.Suspense>
-      <div style={{ width: '180px', height: '180px', borderRadius: '100%' }} >
-        <video className="object-cover" style={{ borderRadius: '50%' }} preload='auto' src="https://chat.d-id.com/videos/prs_alice.idle.mp4" autoPlay loop></video>
-      </div>
+
     </div >
   )
 }
