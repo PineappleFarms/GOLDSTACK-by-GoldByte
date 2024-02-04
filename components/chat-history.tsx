@@ -42,8 +42,8 @@ export async function ChatHistory({ userId }: ChatHistoryProps) {
         {/* @ts-ignore */}
         <SidebarList userId={userId} />
       </React.Suspense>
-      <div style={{ width: '700px', height: '700px', borderRadius: '100%' }} >
-        <video className="object-cover" style={{ borderRadius: '50%' }} preload="yes" src="https://chat.d-id.com/videos/prs_alice.idle.mp4" autoPlay loop></video>
+      <div style={{ width: '180px', height: '180px', borderRadius: '100%' }} >
+        <video className="object-cover" style={{ borderRadius: '50%' }} preload='auto' src="https://chat.d-id.com/videos/prs_alice.idle.mp4" autoPlay loop></video>
       </div>
     </div >
   )
